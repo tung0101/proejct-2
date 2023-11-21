@@ -1,0 +1,28 @@
+.wsus__reservation_form {
+    margin: 0 auto;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #E4E7E9;
+    border-radius: 5px;
+  }
+  
+  .form-control select {
+    appearance: none;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #E4E7E9;
+    border-radius: 5px;
+    background: none;
+    background-size: 18px;
+  }
+  .fa-times{
+    color: white;
+    font-size: 24px;
+  }
+  
+  

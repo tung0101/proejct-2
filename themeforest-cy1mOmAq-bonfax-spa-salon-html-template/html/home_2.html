@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="Utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+    <title>BonFax || Spa Salon</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/spacing.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/pointer.css">
+    <link rel="stylesheet" href="css/animated_barfiller.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="home_2">
+
+    <!--=====================================
+        MENU START
+    =====================================-->
+    <nav class="navbar navbar-expand-lg main_menu main_menu_2">
+        <div class="container">
+            <a class="navbar-brand" href="home_2.html">
+                <img src="images/BonFax_logo2.png" alt="BonFax" class="img-fluid w-100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fal fa-bars menu_icom"></i>
+                <i class="fal fa-times menu_close"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home <i class="fas fa-sort-down"></i>
+                        </a>
+                        <ul class="tf__droap_menu">
+                            <li><a href="index.html">Home style 1</a></li>
+                            <li><a class="active" href="home_2.html">Home style 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">pages <i class="fas fa-sort-down"></i></a>
+                        <ul class="tf__droap_menu">
+                            <li><a href="team.html">team</a></li>
+                            <li><a href="team_details.html">team details</a></li>
+                            <li><a href="service_details.html">service details</a></li>
+                            <li><a href="pricing.html">pricing</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="gallery.html">gallery</a></li>
+                            <li><a href="login.html">login</a></li>
+                            <li><a href="register.html">registration</a></li>
+                            <li><a href="testimonial.html">testimonial</a></li>
+                            <li><a href="privacy_policy.html">privacy policy</a></li>
+                            <li><a href="terms_condition.html">terms and condition</a></li>
+                            <li><a href="404.html">404</a></li>
+                            <li><a href="comming_soon.html">comming soon</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">blog <i class="fas fa-sort-down"></i></a>
+                        <ul class="tf__droap_menu">
+                            <li><a href="blog_grid.html">blog grid</a></li>
+                            <li><a href="blog_list.html">blog list</a></li>
+                            <li><a href="blog_details.html">blog details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">contact</a>
+                    </li>
+                </ul>
+                <ul class="menu_right d-flex flex-wrap">
+                    <li><a href="#" class="menu_search"><i class="far fa-search"></i></a>
+                        <div class="tf__search_form">
+                            <form>
+                                <span class="close_search"><i class="far fa-times"></i></span>
+                                <input type="text" placeholder="Search . . .">
+                                <button type="submit">search</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li><a class="reservation" href="#" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">reservation</a></li>
+                    <li><a href="dashboard.html"><i class="fas fa-user"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wsus__reservation">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">make an appointment</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="wsus__reservation_form">
+                            <input class="reservation_input" type="text" placeholder="Name">
+                            <input class="reservation_input" type="text" placeholder="Phone">
+                            <input class="reservation_input" type="text" placeholder="address">
+                            <select class="reservation_input" id="select_js">
+                                <option value="">select service</option>
+                                <option value="">Facial Therapy</option>
+                                <option value="">Candle Message</option>
+                                <option value="">Stone Spa</option>
+                                <option value="">Body Treatments</option>
+                                <option value=""> Aroma Therapy</option>
+                            </select>
+                            <input class="reservation_input" type="date">
+                            <select class="reservation_input" id="select_js2">
+                                <option value="">select time</option>
+                                <option value="">08.00 am to 09.00 am</option>
+                                <option value="">10.00 am to 11.00 am</option>
+                                <option value="">12.00 pm to 01.00 pm</option>
+                                <option value="">02.00 pm to 03.00 pm</option>
+                                <option value="">04.00 pm to 05.00 pm</option>
+                            </select>
+                            <textarea rows="5" placeholder="Message"></textarea>
+                            <button class="common_btn" type="submit">submit now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=====================================
+        MENU END
+    =====================================-->
+
+
+    <!--=====================================
+        BANNER 2 START
+    =====================================-->
+    <section class="wsus__banner_2" style="background: url(images/home2_banner_img.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-9 col-lg-8 wow fadeInUp" data-wow-duration="1s">
+                    <div class="wsus__banner_2_text">
+                        <h1>Glow Your Face And Vitality With Our Best Service.</h1>
+                        <p>Sed perspiciatis unde omnis iste natus error sit voluptatem accus intolt trqwv antium
+                            doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt. </p>
+                        <form>
+                            <ul class="d-flex flex-wrap">
+                                <li>
+                                    <select id="select_js4">
+                                        <option value="">category</option>
+                                        <option value="">Stone Spa </option>
+                                        <option value="">Facial Therapy</option>
+                                        <option value="">Aroma Therapy</option>
+                                        <option value="">Body Treatments</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <select id="select_js5">
+                                        <option value="">services</option>
+                                        <option value="">Stone Spa </option>
+                                        <option value="">Facial Therapy</option>
+                                        <option value="">Aroma Therapy</option>
+                                        <option value="">Body Treatments</option>
+                                    </select>
+                                </li>
+                                <li><button type="submit">search</button></li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====================================
+        BANNER 2 END
+    =====================================-->
+
+
+    <!--=====================================
+        FUTURE SERVICE 2 START
+    =====================================-->
+    <section class="tf__future_service_2 mt_115 xs_mt_65">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__section_heading_2 mb_50 xs_mb_55">
+                        <h5>What We're Offering</h5>
+                        <h3>For Your Future Services</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row futures_slider_2 wow fadeInUp" data-wow-duration="1s">
+                <div class="col-xl-4">
+                    <div class="tf__future_service_single_2">
+                        <div class="tf__future_service_single_2_header">
+                            <span><i class="fas fa-user-shield"></i></span>
+                            <h3>Spa Membership</h3>
+                        </div>
+                        <p>Duis aute irure dolor in reprehenderit in velit esse cillum dolore eu fugiat nulla pariatur
+                            Exce
+                            pteur sint occaecat cupidatat non.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="tf__future_service_single_2">
+                        <div class="tf__future_service_single_2_header">
+                            <span><i class="fas fa-restroom"></i></span>
+                            <h3>Referal Program</h3>
+                        </div>
+                        <p>Duis aute irure dolor in reprehenderit in velit esse cillum dolore eu fugiat nulla pariatur
+                            Exce
+                            pteur sint occaecat cupidatat non.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="tf__future_service_single_2">
+                        <div class="tf__future_service_single_2_header">
+                            <span><i class="fas fa-gift-card"></i></span>
+                            <h3>Gifts Certificates</h3>
+                        </div>
+                        <p>Duis aute irure dolor in reprehenderit in velit esse cillum dolore eu fugiat nulla pariatur
+                            Exce
+                            pteur sint occaecat cupidatat non.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="tf__future_service_single_2">
+                        <div class="tf__future_service_single_2_header">
+                            <span><i class="fas fa-comment-dots"></i></span>
+                            <h3>Give Us a Feed Back</h3>
+                        </div>
+                        <p>Duis aute irure dolor in reprehenderit in velit esse cillum dolore eu fugiat nulla pariatur
+                            Exce
+                            pteur sint occaecat cupidatat non.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====================================
+        FUTURE SERVICE 2 END
+    =====================================-->
+
+
+    <!--=====================================
+        ABOUT 2 START
+    =====================================-->
+    <section class="tf_about_2 mt_120 xs_mt_70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-8 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf_about_2_img">
+                        <div class="img_1">
+                            <img src="images/about_page_img_1.jpg" alt="about" class="img-fluid w-100">
+                        </div>
+                        <div class="img_2">
+                            <img src="images/about_page_img_2.jpg" alt="about" class="img-fluid w-100">
+                        </div>
+                        <p>20+
+                            <span>Years Of Experience</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__section_heading_2 tf__heading_left_2 mb_10">
+                        <h5>About us </h5>
+                        <h3>Welcome To Our Spa Salon</h3>
+                    </div>
+                    <div class="tf_about_2_text">
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugised into thl
+                            consequuntur magni dolores eos qui ratione voluptatem. </p>
+                        <ul class="mt_5">
+                            <li>100% Safe For Your Skin</li>
+                            <li>Special Offers For You</li>
+                            <li>Created From Natural Herbs</li>
+                            <li>Created By Medical Spa Lab</li>
+                            <li>Quality Product From Spalabs</li>
+                            <li>Unique From Others Spa</li>
+                            <li>Created From Natural Herbs</li>
+                            <li>Created By Medical Spa Lab</li>
+                            <li>Quality Product From Spalabs</li>
+                            <li>Unique From Others Spa</li>
+                        </ul>
+                        <a href="about.html" class="common_btn">read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====================================
+        ABOUT 2 END
+    =====================================-->
+
+
+    <!--=====================================
+        CATEGORY 2 START
+    =====================================-->
+    <section class="tf__category_2 mt_115 xs_mt_65">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__section_heading_2 mb_25 xs_mb_30">
+                        <h5>Top Categories </h5>
+                        <h3>Explore Categories</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__category_2_single">
+                        <span>
+                            <img src="images/category_2_icon_1.png" alt="category" class="img-fluid w-100">
+                        </span>
+                        <div class="tf__category_2_single_text">
+                            <h4>Aroma Therapy</h4>
+                            <p>Sed ut perspiciatis unde omnis
+                                error rem sit voluptatem accusantium </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__category_2_single">
+                        <span>
+                            <img src="images/category_2_icon_2.png" alt="category" class="img-fluid w-100">
+                        </span>
+                        <div class="tf__category_2_single_text">
+                            <h4>Sauna Relax</h4>
+                            <p>Sed ut perspiciatis unde omnis
+                                error rem sit voluptatem accusantium </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__category_2_single">
+                        <span>
+                            <img src="images/category_2_icon_3.png" alt="category" class="img-fluid w-100">
+                        </span>
+                        <div class="tf__category_2_single_text">
+                            <h4>Facials</h4>
+                            <p>Sed ut perspiciatis unde omnis
+                                error rem sit voluptatem accusantium </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__category_2_single">
+                        <span>
+                            <img src="images/category_2_icon_4.png" alt="category" class="img-fluid w-100">
+                        </span>
+                        <div class="tf__category_2_single_text">
+                            <h4>Mineral Baths</h4>
+                            <p>Sed ut perspiciatis unde omnis
+                                error rem sit voluptatem accusantium </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__category_2_single">
+                        <span>
+                            <img src="images/category_2_icon_5.png" alt="category" class="img-fluid w-100">
+                        </span>
+                        <div class="tf__category_2_single_text">
+                            <h4>Body Treatments</h4>
+                            <p>Sed ut perspiciatis unde omnis
+                                error rem sit voluptatem accusantium </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__category_2_single">
+                        <span>
+                            <img src="images/category_2_icon_6.png" alt="category" class="img-fluid w-100">
+                        </span>
+                        <div class="tf__category_2_single_text">
+                            <h4>Waxing</h4>
+                            <p>Sed ut perspiciatis unde omnis
+                                error rem sit voluptatem accusantium </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__category_2_single">
+                        <span>
+                            <img src="images/category_2_icon_7.png" alt="category" class="img-fluid w-100">
+                        </span>
+                        <div class="tf__category_2_single_text">
+                            <h4>Massage</h4>
+                            <p>Sed ut perspiciatis unde omnis
+                                error rem sit voluptatem accusantium </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__category_2_single">
+                        <span>
+                            <img src="images/category_2_icon_8.png" alt="category" class="img-fluid w-100">
+                        </span>
+                        <div class="tf__category_2_single_text">
+                            <h4>Geothermal Spa</h4>
+                            <p>Sed ut perspiciatis unde omnis
+                                error rem sit voluptatem accusantium </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====================================
+        CATEGORY 2 END
+    =====================================-->
+
+
+    <!--=====================================
+        SERVICES 2 START
+    =====================================-->
+    <section class="tf__services_2 mt_115 xs_mt_65">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__section_heading_2 mb_30">
+                        <h5>Our Service</h5>
+                        <h3>Explore Popular Services</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__single_service_2">
+                        <div class="tf__single_service_2_img">
+                            <img src="images/service_2_img_1.jpg" alt="services" class="img-fluid w-100">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                        </div>
+                        <div class="tf__single_service_2_text">
+                            <a class="title" href="#">Facial Therapy</a>
+                            <p class="description">Duis aute irure dolor in reprehenderit into volupjl
+                                tate velit esse cillum dolore eu fugiat nulla partr
+                                iatur sunt in culp qui officia deserunt mollit</p>
+                            <div class="btn_area">
+                                <a href="#">Read More</a>
+                                <p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>98</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__single_service_2">
+                        <div class="tf__single_service_2_img">
+                            <img src="images/service_2_img_2.jpg" alt="services" class="img-fluid w-100">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                        </div>
+                        <div class="tf__single_service_2_text">
+                            <a class="title" href="#">Candle Message </a>
+                            <p class="description">Duis aute irure dolor in reprehenderit into volupjl
+                                tate velit esse cillum dolore eu fugiat nulla partr
+                                iatur sunt in culp qui officia deserunt mollit</p>
+                            <div class="btn_area">
+                                <a href="#">Read More</a>
+                                <p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>98</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__single_service_2">
+                        <div class="tf__single_service_2_img">
+                            <img src="images/service_2_img_3.jpg" alt="services" class="img-fluid w-100">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                        </div>
+                        <div class="tf__single_service_2_text">
+                            <a class="title" href="#">Stone Spa </a>
+                            <p class="description">Duis aute irure dolor in reprehenderit into volupjl
+                                tate velit esse cillum dolore eu fugiat nulla partr
+                                iatur sunt in culp qui officia deserunt mollit</p>
+                            <div class="btn_area">
+                                <a href="#">Read More</a>
+                                <p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>98</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__single_service_2">
+                        <div class="tf__single_service_2_img">
+                            <img src="images/service_2_img_4.jpg" alt="services" class="img-fluid w-100">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                        </div>
+                        <div class="tf__single_service_2_text">
+                            <a class="title" href="#">Body Treatments </a>
+                            <p class="description">Duis aute irure dolor in reprehenderit into volupjl
+                                tate velit esse cillum dolore eu fugiat nulla partr
+                                iatur sunt in culp qui officia deserunt mollit</p>
+                            <div class="btn_area">
+                                <a href="#">Read More</a>
+                                <p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>98</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__single_service_2">
+                        <div class="tf__single_service_2_img">
+                            <img src="images/service_2_img_5.jpg" alt="services" class="img-fluid w-100">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                        </div>
+                        <div class="tf__single_service_2_text">
+                            <a class="title" href="#">Aroma Therapy </a>
+                            <p class="description">Duis aute irure dolor in reprehenderit into volupjl
+                                tate velit esse cillum dolore eu fugiat nulla partr
+                                iatur sunt in culp qui officia deserunt mollit</p>
+                            <div class="btn_area">
+                                <a href="#">Read More</a>
+                                <p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>98</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__single_service_2">
+                        <div class="tf__single_service_2_img">
+                            <img src="images/service_2_img_6.jpg" alt="services" class="img-fluid w-100">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                        </div>
+                        <div class="tf__single_service_2_text">
+                            <a class="title" href="#">Sauna Relax </a>
+                            <p class="description">Duis aute irure dolor in reprehenderit into volupjl
+                                tate velit esse cillum dolore eu fugiat nulla partr
+                                iatur sunt in culp qui officia deserunt mollit</p>
+                            <div class="btn_area">
+                                <a href="#">Read More</a>
+                                <p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>98</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====================================
+        SERVICES 2 END
+    =====================================-->
+
+
+    <!--=====================================
+        COUNTER 2 START
+    =====================================-->
+    <section class="tf__counter_2 mt_120 xs_mt_70" style="background: url(images/counter_bg2.jpg);">
+        <div class="tf__counter_2_overlay pt_120 xs_pt_70 pb_120 xs_pb_10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1s">
+                        <div class="tf__single_counter_2">
+                            <div class="tf__single_counter_2_area">
+                                <h3 class="counter">378</h3>
+                            </div>
+                            <p>Worldwide Clients</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1s">
+                        <div class="tf__single_counter_2">
+                            <div class="tf__single_counter_2_area">
+                                <h3 class="counter">20</h3>
+                            </div>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1s">
+                        <div class="tf__single_counter_2">
+                            <div class="tf__single_counter_2_area">
+                                <h3 class="counter">835</h3>
+                            </div>
+                            <p>Wellness & Spa</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1s">
+                        <div class="tf__single_counter_2">
+                            <div class="tf__single_counter_2_area">
+                                <h3 class="counter">1407</h3>
+                            </div>
+                            <p>Beautiful Review</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====================================
+        COUNTER 2 END
+    =====================================-->
+
+
+    <!--=====================================
+        WHY CHOOSE 2 START
+    =====================================-->
+    <section class="tf__why_choose_2 mt_120 xs_mt_65">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-5 col-lg-6 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__section_heading_2 tf__heading_left_2 mb_20">
+                        <h5>Why Choose Us</h5>
+                        <h3>Why You Choose Our Bonfax Spa Salon</h3>
+                    </div>
+                    <div class="tf__why_choose_2_text">
+                        <p>Excepteur sint occaecat cupidatat non proident,sunt inculpk quinto officia deserunt mollit
+                            anim id magna aliqua est laborum.</p>
+                        <ul>
+                            <li>Created From Natural herbs- Ginseng Roots Extract</li>
+                            <li>Created By Medical Professionals Of Spa Lab</li>
+                            <li>Quality Product From Spalabs</li>
+                            <li>Created From Natural herbs- Ginseng Roots Extract</li>
+                            <li>Created By Medical Professionals Of Spa Lab</li>
+                            <li>Quality Product From Spalabs</li>
+                            <li>Created By Medical Professionals Of Spa Lab</li>
+                        </ul>
+                        <a href="#" class="common_btn">Read More</a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__why_choose_2_img">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="img_1">
+                                    <img src="images/why_choose_2_img_1.jpg" alt="why choose" class="img-fluid w-100">
+                                    <span>
+                                        <a class="venobox play_btn" data-autoplay="true" data-vbtype="video"
+                                            href="https://youtu.be/xsnCYCEbdr4">
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-sm-6 col-md-4">
+                                <div class="img_2">
+                                    <img src="images/why_choose_2_img_2.jpg" alt="why choose" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-sm-6 col-md-4">
+                                <div class="img_2">
+                                    <img src="images/why_choose_2_img_3.jpg" alt="why choose" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-sm-6 col-md-4">
+                                <div class="img_2">
+                                    <img src="images/why_choose_2_img_4.jpg" alt="why choose" class="img-fluid w-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====================================
+        WHY CHOOSE 2 END
+    =====================================-->
+
+
+    <!--=====================================
+        GALLERY 2 START
+    =====================================-->
+    <section class="tf__gallery_2 mt_115 xs_mt_65">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 m-auto wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__section_heading_2 mb_25">
+                        <h5>Our Gallery</h5>
+                        <h3>Let's See Our Gallery</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-9 m-auto mb_35 xs_mb_30 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__gallery_filter_2">
+                        <button class="active" type="button" data-filter="*">ahow all</button>
+                        <button type="button" data-filter=".hair">Hair Cut</button>
+                        <button type="button" data-filter=".body">Body Clean</button>
+                        <button type="button" data-filter=".message">Massage</button>
+                        <button type="button" data-filter=".face">Face Massage</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row grid2">
+                <div class="col-xl-4 col-sm-6 col-lg-4 hair message wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__gallery_item tf__gallery_item_2">
+                        <a class="venobox" data-gall="gallery01" href="images/gallery_img_1.jpg">
+                            <img src="images/gallery_img_1.jpg" alt="gallery1" class="img-fluid w-100">
+                            <div class="gal_img_overlay">
+                                <h4>Faciale Massage</h4>
+                                <p>Duis auteirure dolor in reprehenderit</p>
+                            </div>
+                            <span><i class="fas fa-eye"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 col-lg-4 body face wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__gallery_item tf__gallery_item_2">
+                        <a class="venobox" data-gall="gallery01" href="images/gallery_img_2.jpg">
+                            <img src="images/gallery_img_2.jpg" alt="gallery1" class="img-fluid w-100">
+                            <div class="gal_img_overlay">
+                                <h4>Faciale Massage</h4>
+                                <p>Duis auteirure dolor in reprehenderit</p>
+                            </div>
+                            <span><i class="fas fa-eye"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 col-lg-4 hair face wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__gallery_item tf__gallery_item_2">
+                        <a class="venobox" data-gall="gallery01" href="images/gallery_img_3.jpg">
+                            <img src="images/gallery_img_3.jpg" alt="gallery1" class="img-fluid w-100">
+                            <div class="gal_img_overlay">
+                                <h4>Faciale Massage</h4>
+                                <p>Duis auteirure dolor in reprehenderit</p>
+                            </div>
+                            <span><i class="fas fa-eye"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 col-lg-4 body message wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__gallery_item tf__gallery_item_2">
+                        <a class="venobox" data-gall="gallery01" href="images/gallery_img_4.jpg">
+                            <img src="images/gallery_img_4.jpg" alt="gallery1" class="img-fluid w-100">
+                            <div class="gal_img_overlay">
+                                <h4>Faciale Massage</h4>
+                                <p>Duis auteirure dolor in reprehenderit</p>
+                            </div>
+                            <span><i class="fas fa-eye"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 col-lg-4 hair message wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__gallery_item tf__gallery_item_2">
+                        <a class="venobox" data-gall="gallery01" href="images/gallery_img_5.jpg">
+                            <img src="images/gallery_img_5.jpg" alt="gallery1" class="img-fluid w-100">
+                            <div class="gal_img_overlay">
+                                <h4>Faciale Massage</h4>
+                                <p>Duis auteirure dolor in reprehenderit</p>
+                            </div>
+                            <span><i class="fas fa-eye"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 col-lg-4 body face wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__gallery_item tf__gallery_item_2">
+                        <a class="venobox" data-gall="gallery01" href="images/gallery_img_6.jpg">
+                            <img src="images/gallery_img_6.jpg" alt="gallery1" class="img-fluid w-100">
+                            <div class="gal_img_overlay">
+                                <h4>Faciale Massage</h4>
+                                <p>Duis auteirure dolor in reprehenderit</p>
+                            </div>
+                            <span><i class="fas fa-eye"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====================================
+        GALLERY 2 END
+    =====================================-->
+
+
+    <!--=====================================
+        WORK 2 START
+    =====================================-->
+    <section class="tf__work_2 mt_115 xs_mt_65">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__section_heading_2 mb_50 xs_mb_55">
+                        <h5>3 Easy Step</h5>
+                        <h3>How It works?</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tf__work_2_area" style="background: url(images/counter_bg2.jpg);">
+            <div class="tf__work_2_area_overlay pt_120 xs_pt_70 pb_120 xs_pb_30">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-sm-6 col-md-4 wow fadeInUp" data-wow-duration="1s">
+                            <div class="tf__work_single_2">
+                                <p>Lorem ipsum dolor sit amet conse elit eiusmod tempor <span>1</span></p>
+                                <h4>Meeting</h4>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 col-md-4 wow fadeInUp" data-wow-duration="1s">
+                            <div class="tf__work_single_2">
+                                <p>Lorem ipsum dolor sit amet conse elit eiusmod tempor <span>2</span></p>
+                                <h4>Treatment</h4>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 col-md-4 wow fadeInUp" data-wow-duration="1s">
+                            <div class="tf__work_single_2">
+                                <p>Lorem ipsum dolor sit amet conse elit eiusmod tempor <span>3</span></p>
+                                <h4>Finalizing</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====================================
+        WORK 2 END
+    =====================================-->
+
+
+    <!--=====================================
+        TEAM 2 START
+    =====================================-->
+    <section class="tf__team_2 mt_115 xs_mt_65">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 m-auto wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__section_heading_2 mb_25 xs_mb_30">
+                        <h5>Our team</h5>
+                        <h3>Our Experience Specialists</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__single_team_2">
+                        <div class="tf__single_team_2_img">
+                            <img src="images/team_img_4.jpg" alt="team" class="img-fluid w-100">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="tf__single_team_2_text">
+                            <h3>Devon Lane</h3>
+                            <p>Sr.Dermatologist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__single_team_2">
+                        <div class="tf__single_team_2_img">
+                            <img src="images/team_img_1.jpg" alt="team" class="img-fluid w-100">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="tf__single_team_2_text">
+                            <h3>Jane Cooper</h3>
+                            <p>Dermatologist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__single_team_2">
+                        <div class="tf__single_team_2_img">
+                            <img src="images/team_img_8.jpg" alt="team" class="img-fluid w-100">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="tf__single_team_2_text">
+                            <h3>Atik Farhan</h3>
+                            <p>Sr.Dermatologist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====================================
+        TEAM 2 END
+    =====================================-->
+
+
+    <!--=====================================
+        TESTIMONIAL 2 START
+    =====================================-->
+    <section class="tf__testimonial_2 mt_115 xs_mt_65">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 m-auto wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__section_heading_2 mb_25 xs_mb_30">
+                        <h5>Our Testimonial</h5>
+                        <h3>What Our Clients Says</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__single_testimonial_2">
+                        <div class="tf__single_testimonial_img_2">
+                            <img src="images/client_1.jpg" alt="client" class="img-fluid w-100">
+                        </div>
+                        <div class="tf__single_testimonial_text_2">
+                            <h3 class="title">Courtney Henry</h3>
+                            <p class="designation">Sr. UX/UI Designer</p>
+                            <p class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <p class="cliect_comment">
+                                Duis aute irure dolor in reprehenderit into volupjl
+                                tate velit esse cillum dolore eu fugiat nulla partr
+                                iatur sunt in culp.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__single_testimonial_2">
+                        <div class="tf__single_testimonial_img_2">
+                            <img src="images/client_3.jpg" alt="client" class="img-fluid w-100">
+                        </div>
+                        <div class="tf__single_testimonial_text_2">
+                            <h3 class="title">Letitia Shelton</h3>
+                            <p class="designation">web Designer</p>
+                            <p class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <p class="cliect_comment">
+                                Duis aute irure dolor in reprehenderit into volupjl
+                                tate velit esse cillum dolore eu fugiat nulla partr
+                                iatur sunt in culp.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__single_testimonial_2">
+                        <div class="tf__single_testimonial_img_2">
+                            <img src="images/client_9.jpg" alt="client" class="img-fluid w-100">
+                        </div>
+                        <div class="tf__single_testimonial_text_2">
+                            <h3 class="title">Rishmika Lane</h3>
+                            <p class="designation">Sr. UX/UI Designer</p>
+                            <p class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <p class="cliect_comment">
+                                Duis aute irure dolor in reprehenderit into volupjl
+                                tate velit esse cillum dolore eu fugiat nulla partr
+                                iatur sunt in culp.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====================================
+        TESTIMONIAL 2 END
+    =====================================-->
+
+
+    <!--=====================================
+        BLOG 2 START
+    =====================================-->
+    <section class="tf__blog_2 mt_115 xs_mt_65">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 m-auto wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__section_heading_2 mb_30">
+                        <h5>Our News & Blog</h5>
+                        <h3>Read Latest News & Blog</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__single_blog_2">
+                        <div class="tf__single_blog_2_img">
+                            <img src="images/blog_2_img_1.jpg" alt="blog" class="img-fluid w-100">
+                        </div>
+                        <div class="tf__single_blog_2_text">
+                            <ul class="bloger_info">
+                                <li>
+                                    <a href="#">Devon Lane</a>
+                                </li>
+                                <li>
+                                    <img src="images/client_5.jpg" alt="bloger" class="img-fluid w-100">
+                                    <p>Dahid Wilson</p>
+                                </li>
+                            </ul>
+                            <a class="title" href="#">Massage Therapy For Anxiety And Stress</a>
+                            <p>Duis aute irure dolor in reprehenderit into volupjl
+                                tate velit esse cillum dolore eu fugiat nulla partr
+                                iatur sunt in culp qui officia deserunt mollit</p>
+                            <ul class="time_comment">
+                                <li><i class="fas fa-calendar-alt"></i> 05 November 2022</li>
+                                <li><i class="fas fa-comment-dots"></i> 12 Comments</li>
+                            </ul>
+                            <a class="read_btn_2" href="#">Read More <i class="far fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__single_blog_2">
+                        <div class="tf__single_blog_2_img">
+                            <img src="images/blog_2_img_3.jpg" alt="blog" class="img-fluid w-100">
+                        </div>
+                        <div class="tf__single_blog_2_text">
+                            <ul class="bloger_info">
+                                <li>
+                                    <a href="#">Devon Lane</a>
+                                </li>
+                                <li>
+                                    <img src="images/client_8.jpg" alt="bloger" class="img-fluid w-100">
+                                    <p>Dahid Wilson</p>
+                                </li>
+                            </ul>
+                            <a class="title" href="#">Skin Care Therapy For Anxiety And Stress</a>
+                            <p>Duis aute irure dolor in reprehenderit into volupjl
+                                tate velit esse cillum dolore eu fugiat nulla partr
+                                iatur sunt in culp qui officia deserunt mollit</p>
+                            <ul class="time_comment">
+                                <li><i class="fas fa-calendar-alt"></i> 26 November 2022</li>
+                                <li><i class="fas fa-comment-dots"></i> 07 Comments</li>
+                            </ul>
+                            <a class="read_btn_2" href="#">Read More <i class="far fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1s">
+                    <div class="tf__single_blog_2">
+                        <div class="tf__single_blog_2_img">
+                            <img src="images/blog_2_img_2.jpg" alt="blog" class="img-fluid w-100">
+                        </div>
+                        <div class="tf__single_blog_2_text">
+                            <ul class="bloger_info">
+                                <li>
+                                    <a href="#">Devon Lane</a>
+                                </li>
+                                <li>
+                                    <img src="images/client_9.jpg" alt="bloger" class="img-fluid w-100">
+                                    <p>Dahid Wilson</p>
+                                </li>
+                            </ul>
+                            <a class="title" href="#">The Balance & Harmony Of Body And Mind</a>
+                            <p>Duis aute irure dolor in reprehenderit into volupjl
+                                tate velit esse cillum dolore eu fugiat nulla partr
+                                iatur sunt in culp qui officia deserunt mollit</p>
+                            <ul class="time_comment">
+                                <li><i class="fas fa-calendar-alt"></i> 05 November 2022</li>
+                                <li><i class="fas fa-comment-dots"></i> 12 Comments</li>
+                            </ul>
+                            <a class="read_btn_2" href="#">Read More <i class="far fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====================================
+        BLOG 2 END
+    =====================================-->
+
+
+    <!--=====================================
+        FOOTER 2 START
+    =====================================-->
+    <footer class="tf__footer_2 mt_180 xs_mt_130">
+        <div class="container">
+            <div class="tf__footer_subscribe">
+                <div class="row justify-content-between">
+                    <div class="col-lg-5">
+                        <div class="tf__footer_subscribe_text">
+                            <h4>Subscribe For Our Newslette</h4>
+                            <p>Lorem ipsum dolor sit amet nibh saperet te pri at nam.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="tf__footer_subscribe_form">
+                            <form>
+                                <input type="text" placeholder="Subscribe">
+                                <button type="submit" class="read_btn">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt_20 xs_mt_10 pb_80 xs_pb_30 justify-content-between">
+                <div class="col-lg-3 col-md-6">
+                    <div class="tf__footer_logo_area">
+                        <a class="footer_logo" href="index.html">
+                            <img src="images/footer_logo.png" alt="Bonfax" class="img-fluid w-100">
+                        </a>
+                        <p>Sed ut perspiciatis unde omnis iste
+                            natus error sit voluptatem accusantium enim ipsam voluptatem quia voluptas.</p>
+                        <ul class="d-flex flex-wrap">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="tf__footer_link">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><a href="#">Facials</a></li>
+                            <li><a href="#">Waxing</a></li>
+                            <li><a href="#">Message</a></li>
+                            <li><a href="#">Mineral Baths</a></li>
+                            <li><a href="#">Body Treatments</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="tf__footer_link md_margin">
+                        <h4>Contact Us</h4>
+                        <p><i class="fas fa-phone-alt"></i> +44 (0) 20 9994 7740</p>
+                        <p><i class="fas fa-envelope"></i> support@yourdomain.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Blackwell Street,Dry Creek,Alaska</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="tf__footer_download tf__footer_link md_margin">
+                        <h4>Download Our App</h4>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqui</p>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-google-play"></i>
+                                    <p>
+                                        <span>download on</span>
+                                        Google Play
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-apple"></i>
+                                    <p>
+                                        <span>download on</span>
+                                        App Store
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tf__footer_2_copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tf__footer_copyright">
+                            <p>©2023 <a href="home_2.html">Bonfax Spa Salon</a>. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--=====================================
+        FOOTER 2 END
+    =====================================-->
+
+
+    <!--=========================
+        SCROLL BUTTON START
+    ===========================-->
+    <div class="tf__scroll_btn">
+        <span><i class="fas fa-arrow-alt-up"></i></span>
+    </div>
+    <!--==========================
+        SCROLL BUTTON END
+    ===========================-->
+
+
+    <!--jquery library js-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--font-awesome js-->
+    <script src="js/Font-Awesome.js"></script>
+    <!--venobox js-->
+    <script src="js/venobox.min.js"></script>
+    <!--slick slider js-->
+    <script src="js/slick.min.js"></script>
+    <!--cursor pointer js-->
+    <script src="js/pointer.js"></script>
+    <!--isotop js-->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!--counter js-->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.countup.min.js"></script>
+    <!--barfiller js-->
+    <script src="js/animated_barfiller.js"></script>
+    <!--nice select js-->
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!--stucky sidebar js-->
+    <script src="js/sticky_sidebar.js"></script>
+    <!--simply countdown js-->
+    <script src="js/simplyCountdown.js"></script>
+    <!--wow js-->
+    <script src="js/wow.min.js"></script>
+
+    <!--main/custom js-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
